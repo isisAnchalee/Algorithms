@@ -36,3 +36,21 @@ function showDistro() {
     }
   }
 };
+
+
+_.extend = function(obj) {
+    for(var i = 0; i < arguments.length; i++){
+      for(var key in arguments[i]){
+        obj[key] = arguments[i][key];
+      }
+    }
+    return obj;
+  };
+
+}).call(this);
+
+function test(arg1){
+  for (var i = 0; i < arguments.length; i++){
+    console.log(arguments[i]);
+  }
+}

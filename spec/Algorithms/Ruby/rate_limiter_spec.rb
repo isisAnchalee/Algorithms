@@ -1,11 +1,11 @@
 require_relative '../../../Algorithms/Ruby/rate-limiter'
 
 describe 'RateLimiter' do
-  let(:rate_limitor) { RateLimiter.new }
+  let(:rate_limiter) { RateLimiter.new }
   specify '#hit_endpoint does not allow 11 requests within 10 seconds' do
     request_statuses = []
     11.times do
-      request_statuses << rate_limitor.hit_endpoint
+      request_statuses << rate_limiter.hit_endpoint
     end
 
     request_statuses[0..9].each do |status|
@@ -18,7 +18,7 @@ describe 'RateLimiter' do
   specify '#hit_endpoint allows 11 requests over 11 seconds' do
     request_statuses = []
     11.times do
-      request_statuses << rate_limitor.hit_endpoint
+      request_statuses << rate_limiter.hit_endpoint
       sleep(1)
     end
 

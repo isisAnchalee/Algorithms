@@ -1,3 +1,6 @@
+# must account for trees having duplicate values 
+# O(logn) space
+
 def valid_binary_tree(root)
   MAX_INT = 99999999999999999999
   LOW_INT = -99999999999999999999

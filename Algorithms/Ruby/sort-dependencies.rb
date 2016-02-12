@@ -1,5 +1,4 @@
-# Topological sort works only for DAGs (Directed acyclic graphs).
-# The objective of this sort is print the postorder sequence of DFS nodes.
+# Resolve dependencies
 
 class TopologicalSort
   attr_accessor :post_order
@@ -13,6 +12,8 @@ class TopologicalSort
     dfs
   end
 
+  # post_order will end up being the order in which the dependencies resolve
+  
   private
   def dfs(node)
     stack = [@source]
@@ -29,4 +30,3 @@ class TopologicalSort
     end
   end
 end
-

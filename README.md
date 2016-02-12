@@ -45,6 +45,10 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Doubly Linked List](/Data-Structures/Ruby/doubly-linked-list.rb)
 * [Singly Linked List](/Data-Structures/Ruby/singly-linked-list.rb)
 * [Linked Stack](/Data-Structures/Ruby/linked-stack.rb)
+* [Weighted Graph](/Data-Structures/Ruby/weighted-graph.rb)
+* [LRU Cache](/Data-Structures/Ruby/lru-cache.rb)
+* [Hash Map](/Data-Structures/Ruby/hash-map.rb)
+* [Linked List](/Data-Structures/Ruby/linked-list.rb)
 
 #Algorithms
 
@@ -84,6 +88,8 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Symmetric Binary Tree](/Algorithms/JavaScript/symmetric-binary-tree.js)
 * [Transpose](/Algorithms/JavaScript/transpose.js)
 * [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
+* [JSON.Stringify](/Algorithms/JavaScript/json-stringify.js)
+* [UnderscoreJS](/Algorithms/JavaScript/underscore.js)
 
 ###Ruby:
 
@@ -126,6 +132,20 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
 * [Summary Ranges](/Algorithms/Ruby/summary-ranges.rb)
 * [Topological Sort](/Algorithms/Ruby/topological_sort.rb)
+* [Trace Path Eating Carrots](/Algorithms/Ruby/trace-path-eating-carrots.rb)
+* [Detect Cycle in Graph](/Algorithms/Ruby/detect-graph-cycle.rb)
+* [Resolve Dependencies](/Algorithms/Ruby/sort-dependencies.rb)
+* [Rectangular Overlap](/Algorithms/Ruby/rectangular-overlap.rb)
+* [Divide Without Division](/Algorithms/Ruby/divide-without-division.rb)
+* [Kth Smallest From 2 Arrays](/Algorithms/Ruby/kth-smallest-from-two-arrays.rb)
+* [BT Lowest Common Ancestor](/Algorithms/Ruby/lowest-common-ancestor-bt.rb)
+* [Enumerables](/Algorithms/Ruby/enumerables.rb)
+* [Deep Dup](/Algorithms/Ruby/deep-dup.rb)
+* [XOR](/Algorithms/Ruby/xor-without-xor.rb)
+* [Recursive Stack Sort](/Algorithms/Ruby/recursive-stack-sort.rb)
+* [Recurive Reverse Stack](/Algorithms/Ruby/recursive-reverse-stack.rb)
+* [Lexigraphical Permutations](/Algorithms/Ruby/sorted-permutations.rb)
+* [Square Root](/Algorithms/Ruby/square-root.rb)
 
 #Cracking the Coding Interview
 
@@ -162,3 +182,8 @@ This is repository of data structures and algorithms written in Javascript and R
 
 * [Maxiumum Subsequence](/Algorithms/Dynamic-Programming/max-subsequence.rb)
 * [Minimum Change Sum](/Algorithms/Dynamic-Programming/min-change-sum.rb)
+* [Matrix Sum](/Algorithms/Dynamic-Programming/matrix-sum.rb)
+* [Min Path Sum](/Algorithms/Dynamic-Programming/min-path-sum.rb)
+* [Longest Valid Parenthesis](/Algorithms/Dynamic-Programming/longest-valid-parenthesis.rb)
+* [Longest Increasing Path](/Algorithms/Dynamic-Programming/longest-increasing-path.rb)
+* [Range Sum Query](/Dynamic-Programming/range-sum-query.rb)

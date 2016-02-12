@@ -1,5 +1,5 @@
 # Definition for a binary tree node.
-# class TreeNode
+# class root
 #     attr_accessor :val, :left, :right
 #     def initialize(val)
 #         @val = val
@@ -10,11 +10,30 @@
 # @param {TreeNode} root
 # @return {Integer}
 
-def min_depth_binary_tree(root)
+# Recursive
+def min_depth(root)
   return 0 unless root
   return 1 unless root.left && root.right
-  return 1 + min_depth_binary_tree(root.left) unless root.right
-  return 1 + min_depth_binary_tree(root.right) unless root.left
 
-  1 + [min_depth_binary_tree(root.left), min_depth_binary_tree(root.right)].min
+  1 + [min_depth(root.left), min_depth(root.right)].min
+end
+
+# Iterative
+def min_depth(root)
+  return 0 unless root
+  min_depth = Float::INFINITY
+  stack = [[root, 1]]
+
+  while stack.length > 0
+    node, depth = stack.pop
+    stack.push([node.left, depth + 1]) if node.left
+    stack.push([node.right, depth + 1]) if node.right
+    if !node.left && !node.right
+      if depth < min_depth
+          min_depth = depth
+      end
+    end
+  end
+
+  min_depth
 end

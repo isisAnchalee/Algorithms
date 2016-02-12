@@ -1,4 +1,5 @@
-# needs refactoring
+# Write a function to determine if 2 strings are one edit away from each other.
+
 def one_edit_away(str1, str2)
   return true if str1 == str2
   str1, str2 = str1.chars, str2.chars

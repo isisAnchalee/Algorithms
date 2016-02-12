@@ -22,6 +22,10 @@ class MinMax
   end
 end
 
+def get_max_bst_in_bt(root)
+  largest_bst_in_bt(root).size
+end
+
 def largest_bst_in_bt(root)
   return MinMax.new unless root
 
@@ -48,11 +52,11 @@ def largest_bst_in_bt(root)
 
   # if root.left is null then set root.data as min else
   # take min of left side as min
-  current_min_max.min = root.left ? right_min_max.max : root.val
+  current_min_max.min = root.left ? left_min_max.max : root.val
 
   # if root.right is null then set root.data as max else
   # take max of right side as max.
   current_min_max.max = root.right ? right_min_max.max : root.val
-  current_min_max.size
+  current_min_max
 end
 
