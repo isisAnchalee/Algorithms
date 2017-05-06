@@ -75,7 +75,7 @@ class Dijkstra
     @distance_to[edge.to] = @distance_to[edge.from] + edge.weight
     @path_to[edge.to] = edge.from
 
-    # If the node is already in this priority queue, the only that happens is
+    # If the node is already in this priority queue, the only thing that happens is
     # that its distance is decreased.
     @pq.insert(edge.to, @distance_to[edge.to])
   end

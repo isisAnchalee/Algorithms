@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+j# Definition for a binary tree node.
 # class root
 #     attr_accessor :val, :left, :right
 #     def initialize(val)

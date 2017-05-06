@@ -13,19 +13,19 @@
 # @return {String[]}
 
 def convert_bst(root)
-  queue = [root]
-   prev = nil
+  stack = [root]
+  prev = nil
 
-  while queue.length > 0
-    node = queue.unshift
-    queue.push(node.left) if node.left
+  while stack.length > 0
+    node = stack.pop
+    stack.push(node.left) if node.left
     node.left = prev
-    queue.push(node.right) if node.right
-    node.right = queue.first
+    stack.push(node.right) if node.right
+    node.right = stack.first
     prev = node
   end
 end
 
 
 # in-order traversal, pointing the left pointer to the previous 
-# node and right pointer to next in queue.
+# node and right pointer to next in stack.

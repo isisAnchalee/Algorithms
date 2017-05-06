@@ -21,7 +21,7 @@ def inorder_traversal(root)
 end
 
 def recursive_dfs(root, res)
-  return [] unless root
+  return res unless root
   recursive_dfs(root.left, res) if root.left
   res << root.val
   recursive_dfs(root.right, res) if root.right

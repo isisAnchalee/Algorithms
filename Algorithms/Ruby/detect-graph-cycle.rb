@@ -9,6 +9,7 @@ class GraphCycleDetection
   def initialize(graph)
     @graph = graph
     @seen = {}
+    @ordering = []
   end
 
   def topological_sort
