@@ -29,9 +29,9 @@ class LCA_BT
   end
 
   def get_lca
-    shortest_path = get_shortest_length(@paths["#{@node_a.val}"], @paths["#{@node_b.val}"])
+    shortest_length = get_shortest_length(@paths["#{@node_a.val}"], @paths["#{@node_b.val}"])
 
-    shortest_path.times do |i|
+    shortest_length.times do |i|
       @lca = @paths["#{node_a.val}"][i] if @paths["#{node_a.val}"][i] == @paths["#{node_b.val}"][i]
     end
   end
